@@ -1,0 +1,35 @@
+
+<ul>
+  <li *ngFor="let item of project">
+    <a routerLink="/projects/{{item.id}}">
+      <img [src]="item.imageUrl" [alt]="item.name" />
+      <div class="content">
+        <div class="name">
+          {{item.name}}
+        </div>
+        <span class="favorite {{item.favorite?'':'not'}}">
+          ❤
+        </span>
+        <!-- <div class="stars">
+          <star-rating [stars]="food.stars" /> -->
+        <!-- </div> -->
+
+        <div class="product-item-footer">
+          <div class="origins">
+            <span *ngFor="let tag of item.tags">
+              {{tag}}
+            </span>
+          </div>
+
+        </div>
+
+        <div class="price">
+          <span>
+            {{item.price | currency}}
+          </span>
+        </div>
+      </div>
+    </a>
+  </li>
+</ul>
+
