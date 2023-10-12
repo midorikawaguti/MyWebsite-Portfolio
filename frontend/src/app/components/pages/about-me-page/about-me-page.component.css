@@ -1,23 +1,20 @@
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
+*{
+  margin:0;
   padding: 0;
 }
 
-header {
-  /* background-color: #cafcc5; */
+
+.header {
   color: #082a1c;
   padding: 20px;
   text-align: center;
   font-family: monospace;
 }
 
-h1 {
-  margin: 0;
-}
 
 p{
   text-align: justify;
+  margin: 20px 30px 20px 30px;
 }
 
 main {
@@ -30,44 +27,52 @@ section {
   margin-bottom: 50px;
 }
 
-h2 {
-  color: #56bb1c;
-}
 
 ul {
   padding-left: 20px;
 }
 
-.grid-container{
-    display: grid;
-    place-items: center;
-    margin-left:10% ;
-    margin-right:10% ;
-    grid-row-gap: 10px;
+.grid-container-1{
+  align-items: center;
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  column-gap: 20px;
   }
 
 .profile_pic{
-  max-width: 500px;
-  /* height: 300px; */
-  border-radius: 10%;
-  position: relative;
-  overflow: hidden;
-
-
+  width: 95%; /* Make the div width 100% of its parent */
+  height: auto; /* Set the div height to 100% of viewport height */
+  margin-top: 20px; /* Add space on the top */
+  margin-left: 20px; /* Add space on the left */
   }
 
-  .image-cropper {
-    width: 300px;
-    height: 300px;
-    border-radius: 6%;
-    position: relative;
-    overflow: hidden;
-}
-.text{
-  grid-row: inherit;
-  text-align: justify;
+  @media (max-width: 590px) {
+    .profile_pic{
+      max-width: 80%;
+      height: auto;
+      display: block;
+    }
+    .grid-container-1{
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  /*    ICONS    */
+.list-icons{
+  display: flex;
+  flex-wrap: wrap;
+  gap:2rem;
+  justify-content: space-around;
 }
 
-td{
-  padding: 5px;
+.list-icons>*{
+  list-style-type: none;
 }
+
+a:hover{
+  cursor: pointer;
+}
+
+
+

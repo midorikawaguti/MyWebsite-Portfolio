@@ -1,12 +1,39 @@
 <body>
-  <h1>Contact Information</h1>
+  <div>
+    <h1 class="header">Contact</h1>
+  </div>
+  <div>
+    <form method="POST">
+      <label for="name">Name</label><br>
+      <input type="text" name="Name" id="name" placeholder="Your name.."><br>
 
-  <p><i class="bi bi-envelope-at-fill"></i><a href="midori.kawaguti@gmail.com">midori.kawaguti@gmail.com</a></p>
+      <label for="email">E-mail</label><br>
+      <input type="text" name="email" id="email" placeholder="Your email.."><br>
 
-  <p> <i class="bi bi-linkedin"></i> <a href="https://www.linkedin.com/in/your-linkedin-profile" target="_blank"></a></p>
+      <label for="message">Message</label><br>
+      <textarea type="text" name="message" id="message" rows="5"cols="30" placeholder="Your message.."></textarea><br>
 
-  <p><i class="bi bi-github"></i> <a href="https://www.linkedin.com/in/your-linkedin-profile" target="_blank"></a></p>
+      <input type="submit" value="Submit">
+    </form>
+  </div>
 
 
+  <ul class="list-icons">
+    <li>
+      <a href="https://github.com/midorikawaguti" target="_blank">
+        <i class="bi bi-github fa-2x text-secondary m-3"></i>
+      </a>
+    </li>
+    <li>
+      <a href="https://www.linkedin.com/in/tatiana-midori-uemura-kawaguti-6865b5120/" target="_blank">
+        <i class="bi bi-linkedin fa-2x text-secondary m-3"></i>
+      </a>
+    </li>
+    <li>
+      <a href="mailto:midori.kawaguti@gmail.com">
+        <i class="bi bi-envelope-fill fa-2x text-secondary m-3"></i>
+      </a>
+    </li>
+  </ul>
 </body>
 

@@ -2,17 +2,7 @@ header{
   position: relative;
   background: white;
   padding: 10px;
-  border-bottom: 1px solid #3ab31c;
-}
-
-a{
-  color: #1fb117;
-}
-
-a:hover{
-  background: #8cee8c;
-  color: white;
-  cursor: pointer;
+  border-bottom: 1px solid #296028;
 }
 
 .navbar{
@@ -21,60 +11,53 @@ a:hover{
   align-items: center;
 }
 
+a{
+  color: #526751;
+}
+
+a:hover{
+  background: #E0F6DC;
+  color: rgb(22, 72, 9);
+  cursor: pointer;
+}
+
+
 a.logo{
   font-weight: bold;
-  padding: 1rem;
+  padding: 0.5rem;
+  border-radius: 10%;
+  transition: background-color 0.3s;
 }
+
+.image-detail{
+  height:50px;
+  width: auto;
+}
+
 
 
 ul{
   display: flex;
-  /* gap: 1 em; */
+  gap: 2 rem;
   list-style-type:none;
-  /* margin: 0; */
+  flex-wrap: wrap;
 }
 
-
-a.li{
-  /* padding: 1 rem; */
-  /* display: inline-block; */
-
-}
-
-/* a span{
-  background:#ff4d4d;
-  color: white;
-  padding: 0.1rem 0.45rem;
-  border-radius: 100rem;
-  font-size: 0.9rem;
-} */
-
-/* .menu-container{
-  position:relative;
-} */
-
-/* .menu{
-  position: absolute;
-  z-index: 1;
-  background: whitesmoke;
-  display:none;
-} */
-
-/* .menu-container:hover .menu{
-  display: block;
-} */
-
-/* .menu a{
-  width: 100%;
-  min-width:8rem;
-} */
 
 li{
-  padding: 1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 5%;
+  transition: background-color 0.3s;
 }
 
-/* Add margin between list items */
-/* ul li:not(:last-child) {
-  margin-right: 1rem;
+li:hover {
+  background-color: #E0F6DC;
+}
 
-} */
+
+
+
+
+
+
+

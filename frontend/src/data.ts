@@ -4,24 +4,18 @@ import {Projects} from './app/shared/models/Projects';
 
 export const sample_projects: Projects[] = [
   { id:'1',
-    name:'Project 1',
-    imageUrl:'assets/wish-1.jpg',
-    tags: ['C#', 'Object Oriented'],
-    price: 1000,
-    favorite: true,
+    name:'Expense Tracker',
+    imageUrl:'assets/money-finance.jpeg',
+    tags: ['HTML', 'CSS', 'MongoDB', 'Angular','Object Oriented']
   },
   { id:'2',
-  name:'Project 1',
-  imageUrl:'assets/wish-2.jpg',
-  tags: ['PL/SQL', 'Oracle Database', 'Java'],
-  price: 1000,
-  favorite: true,
+  name:'Coffee Shop App',
+  imageUrl:'assets/coffee.jpeg',
+  tags: ['HTML', 'CSS', 'MongoDB', 'Angular','Object Oriented']
   },
   { id:'3',
-  name:'Project 1',
-  imageUrl:'assets/wish-3.jpeg',
-  tags: ['Angular', 'CSS', 'HTML'],
-  price: 1000,
-  favorite: true,
+  name:'ToDo List',
+  imageUrl:'assets/to-do-list.jpg',
+  tags: ['JavaScript', 'HTML', 'CSS']
   }
 ]
