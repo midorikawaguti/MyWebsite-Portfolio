@@ -1,5 +1,11 @@
 
-<h1 class="header">About Me</h1>
+<h1 class="section-title">Projects</h1>
+
+<div class="text">
+  <p>I'm excited to show you some of the projects I've worked on. From my college days to online learning, these projects have taught me different concepts both personally and professionally and have been a significant part of my journey until now.
+  <br><br>
+  I hope you find them interesting and enjoyable!</p>
+</div>
 
 <ul>
   <li *ngFor="let item of project">
@@ -12,8 +18,8 @@
 
 
 
-        <div class="product-item-footer">
-          <div class="origins">
+        <div class="project-item-footer">
+          <div class="technologies">
             <span *ngFor="let tag of item.tags">
               {{tag}}
             </span>

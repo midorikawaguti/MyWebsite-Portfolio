@@ -1,21 +1,20 @@
-*{
-  margin:0;
-  padding: 0;
+.profile_pic {
+  align-items: end;
 }
 
+img{
+  width: 70%;
+  height: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-left: 120px;
 
-.picture1{
-  width: 85%; /* Make the div width 100% of its parent */
-  height: auto; /* Set the div height to 100% of viewport height */
-  margin-top: 20px; /* Add space on the top */
-  margin-left: 20px; /* Add space on the left */
 }
 
-.grid-container-1{
+.container-1{
   align-items: center;
   display: grid;
   grid-template-columns: 2fr 2fr;
-  column-gap: 20px;
 }
 
 .allText{
@@ -26,45 +25,51 @@
 }
 
 
-@media (max-width: 590px) {
-  .picture1{
-    max-width: 80%;
-    /* width: 100%; */
-    height: auto;
-    display: block;
-  }
-  .grid-container-1{
-    display: flex;
-    flex-direction: column;
-  }
-}
-
-
 .text1{
   font-size: 80px;
-  font-weight: 100;
   margin-top: 24px;
-  margin-bottom: 15px;
-  color: #050f0b;
+  margin-bottom: 8px;
+  color: var(--darkColor);
   text-align: center;
   font-family: monospace;
 }
 
 .text2{
-color:#237c3c;
-font-size: 40px;
-font-weight: 700;
-text-align: center;
+  font-size: 60px;
+
+  color:var(--darkThreeColor);
+  text-align: center;
+  font-family: "Dancing Script", cursive;
 }
 
 .text3{
-margin: 20px 50px 50px;
-font-size: 18px;
+margin: 0px 50px 0px 20px;
+font-size: 20px;
 color:#0f1410;
-text-align: justify;
-font-size: medium;
+text-align: left;
+font-size: 120%;
 }
 
+
+.text4 {
+  margin: 20px;
+  padding: 20px;
+  font-size: 120%;
+  color: #0f1410;
+  text-align: right;
+}
+
+  .section-title{
+    text-align: right;
+    margin-right: 200px;
+    padding: 20px;
+    background-color: var(--darkThreeColor);
+  }
+
+/* ICONS */
+.container-3{
+  margin-top: 20px;
+}
 .list-icons{
   display: flex;
   flex-wrap: wrap;
@@ -76,8 +81,21 @@ font-size: medium;
   list-style-type: none;
 }
 
+@media (max-width: 590px) {
 
-a:hover{
-  cursor: pointer;
+  .container-1{
+    display: flex;
+    flex-direction: column;
+  }
+  img{
+    max-width: 90%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .text1, .text2, .text3, .text4{
+    font-size: 80%;
+  }
+
 }
-

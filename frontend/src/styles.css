@@ -1,6 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
 
-@import url("http://fonts.googleapis.com/css2?family=Quicksand&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 @import "~bootstrap/dist/css/bootstrap.css";
 @import "~font-awesome/css/font-awesome.css";
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css");
@@ -15,7 +15,7 @@ html{
 
 html,
 button{
-  font-family: "Quicksand", "sans-serif";
+  font-family: "Montserrat", sans-serif;
 }
 
 body{
@@ -24,5 +24,26 @@ body{
 
 a{
   text-decoration: none;
+  color:var(--darkColor);
 }
 
+a:hover{
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
+li:hover {
+  transform: scale(1.08);
+}
+
+ul{
+  list-style-type:none;
+}
+
+:root{
+  --darkColor: #092635;
+  --darkTwoColor:rgb(31, 77, 31);
+  --darkThreeColor:rgb(107, 166, 137);
+  --lightColor:#9EC8B9;
+  --lightTwoColor: #E0F6DC;
+}
