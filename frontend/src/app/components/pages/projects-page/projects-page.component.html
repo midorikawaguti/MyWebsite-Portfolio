@@ -9,8 +9,8 @@
 
 <ul>
   <li *ngFor="let item of project">
-    <a routerLink="/projects/{{item.id}}">
-      <img [src]="item.imageUrl" [alt]="item.name" />
+    <a routerLink="/project/{{item._id}}">
+      <img [src]="item.imageUrl[0]" [alt]="item.name" />
       <div class="content">
         <div class="name">
           {{item.name}}

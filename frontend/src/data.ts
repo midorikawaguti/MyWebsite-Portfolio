@@ -3,19 +3,19 @@
 import {Projects} from './app/shared/models/Projects';
 
 export const sample_projects: Projects[] = [
-  { id:'1',
+  { _id:'1',
     name:'Expense Tracker',
-    imageUrl:'assets/money-finance.jpeg',
-    tags: ['HTML', 'CSS', 'MongoDB', 'Angular','Object Oriented']
+    imageUrl:['assets/money-finance.jpeg','assets/money-finance.jpeg'],
+    tags: ['HTML', 'CSS', 'MongoDB', 'Angular', 'Express', 'Node JS']
   },
-  { id:'2',
+  { _id:'2',
   name:'Coffee Shop App',
-  imageUrl:'assets/coffee.jpeg',
+  imageUrl:['assets/coffee.jpeg'],
   tags: ['HTML', 'CSS', 'MongoDB', 'Angular','Object Oriented']
   },
-  { id:'3',
+  { _id:'3',
   name:'ToDo List',
-  imageUrl:'assets/to-do-list.jpg',
+  imageUrl:['assets/to-do-list.jpg'],
   tags: ['JavaScript', 'HTML', 'CSS']
   }
 ]

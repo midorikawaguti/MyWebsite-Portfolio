@@ -11,6 +11,7 @@ import { Projects } from 'src/app/shared/models/Projects';
 export class ProjectsPageComponent {
 
   project: Projects[] = [];
+  sample_projects: any;
 
   constructor(private projectService: ProjectService, activatedRoute: ActivatedRoute ){
     this.project = projectService.getAll();

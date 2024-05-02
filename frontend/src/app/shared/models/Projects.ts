@@ -1,8 +1,10 @@
 /*1. Create Project Model*/
 
 export class Projects{
-  id!:string;
+
+
+  _id! :string;
   name!:string;
-  imageUrl!:string;
+  imageUrl!:string[];
   tags?: string[];
 }
