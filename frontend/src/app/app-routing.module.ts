@@ -2,16 +2,11 @@
 
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { HomeComponent } from './components/pages/home/home.component';
-import { ProjectsPageComponent } from './components/pages/projects-page/projects-page.component';
 import { ProjectDetailPageComponent } from './components/pages/project-detail-page/project-detail-page.component';
-
+import { HomeComponent } from './components/pages/home/home.component';
 
 const routes: Routes = [
   {path:'', component:HomeComponent},
-  {path: 'search/:searchTerm',component:ProjectsPageComponent},
-  {path: 'tag/:tag', component: ProjectsPageComponent},
-  {path: 'projects-page', component:ProjectsPageComponent},
   {path: 'project/:ProjectID', component:ProjectDetailPageComponent }
 ];
 
@@ -20,3 +15,5 @@ const routes: Routes = [
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
+
+

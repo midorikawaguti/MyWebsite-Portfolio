@@ -2,30 +2,32 @@
   align-items: end;
 }
 
-img{
-  width: 70%;
-  height: auto;
-  margin-top: 50px;
-  margin-bottom: 50px;
-  margin-left: 120px;
 
+img {
+    width: 60%; /* Adjust width to make it responsive */
+    height: auto; /* Maintain aspect ratio */
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 150px;
+    border: 5px solid #fff; /* Border around the image */
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2); /* Shadow effect */
 }
 
-.container-1{
+.container-1 {
   align-items: center;
   display: grid;
   grid-template-columns: 2fr 2fr;
 }
 
-.allText{
+.allText {
   display: flex;
   flex-direction: column;
-  gap:20px;
+  gap: 20px;
   justify-content: center;
+  margin-top: 45px;
 }
 
-
-.text1{
+.text1 {
   font-size: 80px;
   margin-top: 24px;
   margin-bottom: 8px;
@@ -34,22 +36,20 @@ img{
   font-family: monospace;
 }
 
-.text2{
+.text2 {
   font-size: 60px;
-
-  color:var(--darkThreeColor);
+  color:#bc6262;
   text-align: center;
   font-family: "Dancing Script", cursive;
 }
 
-.text3{
-margin: 0px 50px 0px 20px;
-font-size: 20px;
-color:#0f1410;
-text-align: left;
-font-size: 120%;
+.text3 {
+  margin: 0px 50px 0px 20px;
+  font-size: 17px;
+  color: #0f1410;
+  text-align: left;
+  font-size: 120%;
 }
-
 
 .text4 {
   margin: 20px;
@@ -59,43 +59,67 @@ font-size: 120%;
   text-align: right;
 }
 
-  .section-title{
-    text-align: right;
-    margin-right: 200px;
-    padding: 20px;
-    background-color: var(--darkThreeColor);
-  }
 
 /* ICONS */
-.container-3{
+.container-2 {
   margin-top: 20px;
-}
-.list-icons{
-  display: flex;
-  flex-wrap: wrap;
-  gap:2rem;
-  justify-content: space-around;
+  margin-bottom: 20px;
+  padding: 20px;
 }
 
-.list-icons>*{
+.list-icons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.list-icons>* {
   list-style-type: none;
 }
 
-@media (max-width: 590px) {
 
-  .container-1{
+.buttons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #bc6262;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #e0aeae;
+}
+
+@media (max-width:732px) {
+  .container-1 {
     display: flex;
     flex-direction: column;
   }
-  img{
-    max-width: 90%;
+
+  img {
+    max-width: 100%;
     height: auto;
     display: block;
     margin-left: auto;
     margin-right: auto;
   }
-  .text1, .text2, .text3, .text4{
-    font-size: 80%;
-  }
 
+  .text1,
+  .text2,
+  .text3,
+  .text4 {
+    font-size: 85%;
+  }
 }
+

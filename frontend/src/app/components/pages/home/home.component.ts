@@ -1,22 +1,44 @@
-import { Component } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
-import { ProjectService } from 'src/app/services/projects';
-import { Projects } from 'src/app/shared/models/Projects';
+import { Component, OnInit, AfterViewInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css']
 })
-export class HomeComponent {
+export class HomeComponent implements OnInit, AfterViewInit {
 
-  project: Projects[] = [];
+  constructor(private router: Router) {}
 
-  constructor(private projectService: ProjectService, activatedRoute: ActivatedRoute ){
-    this.project = projectService.getAll();
+  ngOnInit() {}
+
+  ngAfterViewInit() {
+    this.typeText();
   }
 
-ngOInit(): void{
+  scrollToSection(sectionId: string) {
+    document.getElementById(sectionId)?.scrollIntoView({ behavior: 'smooth' });
+  }
 
-}
+  downloadCV() {
+    window.open('/assets/TatianaK-CV.pdf', '_blank');
+  }
+
+  typeText() {
+    const textElement = document.querySelector("#typed-text h3");
+    const text = "I'm an aspiring software engineer.";
+    let index = 0;
+
+    const type = () => {
+      if (index < text.length) {
+        if (textElement) {
+          textElement.textContent += text.charAt(index);
+          index++;
+          setTimeout(type, 100); // Adjust typing speed here (milliseconds)
+        }
+      }
+    }
+
+    type();
+  }
 }

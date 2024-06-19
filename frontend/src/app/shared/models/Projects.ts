@@ -7,4 +7,5 @@ export class Projects{
   name!:string;
   imageUrl!:string[];
   tags?: string[];
+  description!: string;
 }
