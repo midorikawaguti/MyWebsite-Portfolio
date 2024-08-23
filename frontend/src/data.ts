@@ -5,21 +5,21 @@ import {Projects} from './app/shared/models/Projects';
 export const sample_projects: Projects[] = [
   { _id:'1',
     name:'Learning React',
-    imageUrl:['assets/money-finance.jpeg','assets/money-finance.jpeg'],
+    imageUrl:['assets/LearningReactProject/icons8-react-200.png','assets/LearningReactProject/LearningReact-img1.jpg'],
     tags: ['HTML', 'CSS', 'JavaScript', 'React'],
-    description: 'Developed a dynamic web application facilitating streamlined financial management for users. Employed MongoDB for both user authentication and data storage, ensuring a secure and efficient experience. '
+    description: 'The project was developed using React to create a series of small applications. The main goal was to apply various concepts of the framework, such as components, state, props, event handling, and conditional rendering. Each mini-project was a practical exercise to reinforce my understanding and proficiency in building React applications.'
   },
   { _id:'2',
-  name:'Coffee Shop App',
-  imageUrl:['assets/coffee.jpeg'],
-  tags: ['HTML', 'CSS', 'JavaScript'],
-  description: ''
+    name:'Tic-Tac-Toe',
+    imageUrl:['assets/tic-tac-toe.png'],
+    tags: ['HTML', 'CSS', 'JavaScript', 'React'],
+    description: ''
   },
   { _id:'3',
-  name:'ToDo List',
-  imageUrl:['assets/to-do-list.jpg'],
-  tags: ['JavaScript', 'HTML', 'CSS'],
-  description: ''
+    name:'ToDo List',
+    imageUrl:['assets/to-do-list.jpg'],
+    tags: ['JavaScript', 'HTML', 'CSS'],
+    description: ''
   },
 
 ]

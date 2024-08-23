@@ -15,12 +15,11 @@ ul{
   justify-content:space-between;
   gap: 3rem;
   flex-wrap: wrap;
-
   align-items: center;
 }
 
 li{
-  font-size: 20px;
+  font-size: 18px;
   padding: 0.5rem;
 }
 

@@ -1,15 +1,18 @@
 <div *ngIf="projects && index >= 0 && index < projects.length" class="project-details">
-
   <h2 class="project-name">{{ projects[index].name }}</h2>
-
 
   <div class="technologies">
     <span *ngFor="let tag of projects[index].tags" class="technology">{{ tag }}</span>
   </div>
 
-  <img [src]="projects[index].imageUrl[0]" [alt]="projects[index].name" class="project-image" />
-
   <div class="description">
     {{ projects[index].description }}
   </div>
+
+  <div class="photos-collection">
+    <span *ngFor="let image of projects[index].imageUrl">
+      <img [src]="image" alt="{{ projects[index].name }}" class="project-image">
+    </span>
+  </div>
 </div>
+
